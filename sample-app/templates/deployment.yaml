@@ -20,6 +20,6 @@ spec:
       - command:
         - /app/sample-app
         image: gitopsbook/sample-app:v0.1
-        name: sample-app
+        name: {{ .Values.name }}
         ports:
         - containerPort: 8080
